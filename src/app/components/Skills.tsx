@@ -15,8 +15,6 @@ const skills = [
   { id: 6, name: "JavaScript", proficiency: 93, icon: <IoLogoJavascript /> },
 ];
 
-
-
 //@ts-ignore
 const Skills = ({ theme }) => {
   return (
@@ -42,23 +40,24 @@ const Skills = ({ theme }) => {
 
       <div className="grid xl:grid-cols-6 lg:grid-cols-3 grid-cols-2 w-[95%] gap-6  mt-14 mx-auto justify-between">
         {skills.map((skill, index) => (
-    <div key={index} className="">
-      <div className="flex border hover:grow border-[#261846] hover:bg-[#2A1454] rounded-3xl w-[100%] py-8 items-center flex-col">
-        <h1
-          className={`xl:text-7xl text-5xl grow text-[#aea9a9] ${
-            skill.id == 1 ? "hover:text-orange-600 duration" : ""
-          } ${skill.id == 2 ? "hover:text-green-700" : ""} ${
-            skill.id == 3 ? "hover:text-[#58B647]" : ""
-          } ${skill.id == 4 ? "hover:text-[#3EBFF8]" : ""} ${
-            skill.id == 5 ? "hover:text-[#08D9FF]" : ""
-          } ${skill.id == 6 ? "hover:text-[#F7CF00]" : ""}`}
-        >
-          {skill.icon}
-        </h1>
-        <p className="text-lg text-[#aea9a9] mt-3">{skill.proficiency}%</p>
-      </div>
-    </div>
-  ))}
+          <div
+            key={index}
+            className="flex border hover:grow border-[#261846] hover:bg-[#2A1454] rounded-3xl w-[100%] py-8 items-center flex-col"
+          >
+            <h1
+              className={`xl:text-7xl text-5xl grow text-[#aea9a9] ${
+                skill.id == 1 ? "hover:text-orange-600 duration" : ""
+              } ${skill.id == 2 ? "hover:text-green-700" : ""} ${
+                skill.id == 3 ? "hover:text-[#58B647]" : ""
+              } ${skill.id == 4 ? "hover:text-[#3EBFF8]" : ""} ${
+                skill.id == 5 ? "hover:text-[#08D9FF]" : ""
+              } ${skill.id == 6 ? "hover:text-[#F7CF00]" : ""}`}
+            >
+              {skill.icon}
+            </h1>
+            <p className="text-lg text-[#aea9a9] mt-3">{skill.proficiency}%</p>
+          </div>
+        ))}
       </div>
     </motion.div>
   );
