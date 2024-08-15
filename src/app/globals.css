@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+  /* line-height: 50px; */
+  /* font-weight: 500; */
+  /* font-size: 1.1rem; */
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+.black {
+  background-color: black;
+}
+.background {
+  /* background: rgb(36,0,0); */
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 0, 1) 0%,
+    rgba(68, 36, 127, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.text-grad {
+  background: -webkit-linear-gradient(
+    rgb(188, 184, 197),
+    rgb(86, 5, 247) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.2);
+}
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background: #0f0715;
+  --text-primary: #fff;
+  --button-bg: #fff;
+  --button-text: #000;
+}
+.light-dark-mode {
+  background-color: var(--background);
+  transition: all 0.5s;
+}
