@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
+//@ts-ignore
 export default function useLocalStroage(key, defaultValue) {
   const [value, setValue] = useState(() => {
     let currentValue;
