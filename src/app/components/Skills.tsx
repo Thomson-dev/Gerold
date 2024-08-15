@@ -42,9 +42,9 @@ const Skills = ({ theme }) => {
 
       <div className="grid xl:grid-cols-6 lg:grid-cols-3 grid-cols-2 w-[95%] gap-6  mt-14 mx-auto justify-between">
         {skills.map((skill, index) => (
-          <div className="">
+          <div className=""  key={index}>
             <div
-              key={index}
+             
               className="flex border hover:grow border-[#261846] hover:bg-[#2A1454] rounded-3xl w-[100%] py-8 items-center flex-col"
             >
               <h1
