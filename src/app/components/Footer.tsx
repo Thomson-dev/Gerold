@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <div className="text-white flex justify-center flex-col py-14  items-center bg-[#2E165B]">
       <Image src={logo} alt="logo" className="max-w-[80px] aspect-square" />
-      <div className="flex-row  space-x-9 font-semibold mt-6 text-white">
+      <div className="flex-row  sm:space-x-9 space-x-6 font-semibold mt-6 text-white">
       {FooterItems.map((item) => (
         <a
           key={item.id}

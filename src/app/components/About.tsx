@@ -21,7 +21,7 @@ const About = ({theme}) => {
         </h4>
 
         
-        <p className= {`mt-5 leading-relaxed  max-w-xl xl:text-xl sm:text-lg text-base font-thin sora   ${
+        <p className= {`mt-5 leading-relaxed  max-w-xl xl:text-xl sm:text-lg text-base  sora   ${
               theme == "dark" ? "text-[#DDDDDD]" : "text-black"
             }  `}>
           Since beginning my journey as a freelance designer nearly 8 years ago,

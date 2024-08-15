@@ -145,7 +145,7 @@ const Projects = ({ theme }) => {
           <motion.button
             onClick={() => toggleTab(1)}
             className={`w-full text-sm rounded-full sm:text-base py-3 ${
-              toggleState === 1 ? "bg-[#8750F7] text-white" : ""
+              toggleState === 1 ? "bg-[#8750F7] text-sm text-white" : "text-sm"
             }`}
             transition={{ duration: 1.5, ease: "easeIn" }}
           >
@@ -155,7 +155,7 @@ const Projects = ({ theme }) => {
           <motion.button
             onClick={() => toggleTab(2)}
             className={`w-full text-sm rounded-full px-1 sm:text-base  py-3 ${
-              toggleState === 2 ? "bg-[#8750F7] text-white" : ""
+              toggleState === 2 ? "bg-[#8750F7] text-sm text-white" : "text-sm"
             }`}
             transition={{ duration: 1.5, ease: "easeIn" }}
           >
@@ -165,7 +165,7 @@ const Projects = ({ theme }) => {
           <motion.button
             onClick={() => toggleTab(3)}
             className={`w-full text-sm rounded-full sm:text-base py-3 ${
-              toggleState === 3 ? "bg-[#8750F7] text-white" : ""
+              toggleState === 3 ? "bg-[#8750F7] text-sm text-white" : "text-sm"
             }`}
             transition={{ duration: 1.5, ease: "easeIn" }}
           >

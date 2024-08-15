@@ -37,7 +37,7 @@ const Experience = ({theme}) => {
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         viewport={{once: true}}
         transition={{ duration: 1.5 }} className="w-[100%]">
-        <h1 className="  text-grad font-bold py-1  xl:text-4xl lg:text-3xl  text-grad text-[2rem] ">My Experenice</h1>
+        <h1 className="  text-grad font-bold py-1  xl:text-4xl lg:text-3xl  text-grad text-[1.8rem] ">My Experenice</h1>
         <div className="mt-3 sm:mt-8 ">
         {experiences.map((experience) => {
           return (
@@ -56,7 +56,7 @@ const Experience = ({theme}) => {
        viewport={{once: true}}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }} className="w-[100%] mt-6">
-        <h1 className=" xl:text-4xl lg:text-3xl   text-grad text-[2rem]  text-grad font-bold py-1  ">My Education</h1>
+        <h1 className=" xl:text-4xl lg:text-3xl   text-grad text-[1.8rem]  text-grad font-bold py-1  ">My Education</h1>
        
         <div className="mt-3 sm:mt-8 " >
         {education.map((edu) => {

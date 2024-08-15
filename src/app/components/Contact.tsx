@@ -22,7 +22,7 @@ const Contact = ({ theme }) => {
           Let’s work together!
         </h1>
         <p
-          className={` xl:text-xl sm:text-lg text-base  font-light  leading-6 max-w-lg tracking-wide   ${
+          className={` xl:text-xl sm:text-lg text-base    leading-6 max-w-lg tracking-wide   ${
             theme == "dark" ? "text-white" : "text-[#653ABC]"
           }  `}
         >

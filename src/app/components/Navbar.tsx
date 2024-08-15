@@ -48,7 +48,7 @@ const Navbar = ({ theme, handleToggleTheme }) => {
     // Check if the code is running on the client side
     if (typeof window !== "undefined") {
       const handleScroll = () => {
-        if (window.scrollY > 90) {
+        if (window.scrollY > 100) {
           setScroll(true);
           console.log("scrolling");
         } else {
@@ -68,10 +68,12 @@ const Navbar = ({ theme, handleToggleTheme }) => {
 
   return (
     <div
-      className={` relative lg:max-w-[1350px] md:max-w-[1000px] mx-auto flex justify-between w-full items-center  ${
+      className={` relative lg:max-w-full md:max-w-[1000px] mx-auto flex justify-between w-full items-center  ${
         scroll
-          ? " sticky  top-0 py-9 shadow-md bg-[#0d0321]  duration-500 border z-50 ease-out "
-          : "xl:px-20  px-5 py-11 "
+          ? `sticky top-0 py-9 shadow-md px-4 duration-500 z-50 ease-out ${
+              theme === "dark" ? "bg-[#050709]" : "bg-white"
+            }`
+          : "xl:px-20 px-5 py-11"
       }  `}
     >
       <div className="flex items-center ">
