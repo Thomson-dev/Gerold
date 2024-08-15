@@ -25,7 +25,7 @@ const About = ({theme}) => {
               theme == "dark" ? "text-[#DDDDDD]" : "text-black"
             }  `}>
           Since beginning my journey as a freelance designer nearly 8 years ago,
-          I've done remote work for agencies, consulted for startups, and
+          I have done remote work for agencies, consulted for startups, and
           collaborated with talented people to create digital products for both
           business and consumer use.
         </p>
