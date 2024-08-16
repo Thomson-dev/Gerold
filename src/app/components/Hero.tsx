@@ -91,7 +91,7 @@ const Hero = ({ theme, handleToggleTheme }) => {
           <div className="space-y-7 flex flex-col items-center ">
             <LuAward className="text-4xl text-center  text-[#5f38b5] " />
             <h1
-              className={`xl:text-5xl lg:text-lg   ${
+              className={`xl:text-5xl text-xl   ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >
@@ -110,7 +110,7 @@ const Hero = ({ theme, handleToggleTheme }) => {
             <FaBriefcase className="text-4xl text-center  text-[#5f38b5]" />
 
             <h1
-              className={`xl:text-5xl lg:text-lg  ${
+              className={`xl:text-5xl text-xl  ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >
@@ -128,14 +128,14 @@ const Hero = ({ theme, handleToggleTheme }) => {
           <div className="space-y-7 mt-14 sm:mt-0  flex flex-col items-center">
             <GiGlassCelebration className="text-5xl text-center  text-[#5f38b5] " />
             <h1
-              className={`xl:text-5xl lg:text-lg ${
+              className={`xl:text-5xl text-xl  ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >
               15K
             </h1>
             <h5
-              className={`xl:text-xl lg:text-lg ${
+              className={`xl:text-xl text-lg ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >
@@ -146,7 +146,7 @@ const Hero = ({ theme, handleToggleTheme }) => {
           <div className="space-y-7 mt-14 sm:mt-0 flex flex-col items-center">
             <GrProjects className="text-4xl text-center  text-[#5f38b5] " />
             <h1
-              className={`xl:text-5xl lg:text-lg ${
+              className={`xl:text-5xl text-xl  ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >

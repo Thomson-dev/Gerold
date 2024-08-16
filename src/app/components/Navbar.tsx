@@ -67,10 +67,10 @@ const Navbar = ({ theme, handleToggleTheme }) => {
     <div
       className={` relative lg:max-w-full md:max-w-[1000px] mx-auto flex justify-between w-full items-center  ${
         scroll
-          ? ` sticky top-0 bg-[#050709] py-9 shadow-md px-4 duration-500 z-50 ease-out ${
+          ? ` sticky top-0 bg-[#050709] py-5 shadow-md px-4 duration-500 z-50 ease-out ${
               theme === "dark" ? "bg-[#050709] " : "bg-white"
             }`
-          : "xl:px-20 px-5 py-11"
+          : "xl:px-20 px-5 py-9"
       }  `}
     >
       <div className="flex items-center ">
@@ -110,7 +110,7 @@ const Navbar = ({ theme, handleToggleTheme }) => {
         animate={{ height: open ? "100vh" : 0 }}
         transition={{ duration: open ? 1.5 : 1.5 }}
         className={`flex  flex-col lg:hidden  ${
-          scroll ? " top-[7rem]" : "top-[7rem] "
+          scroll ? " top-[5.6rem]" : "top-[5.6rem] "
         }   space-y-9 items-center  text-white   absolute w-full bg-[#2A1454] left-0  sora  ${
           open ? " h-[100vh] pt-7  " : "h-[0rem] hidden   "
         }  `}

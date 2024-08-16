@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     id: 1,
-    period: "2022 - Present",
+    period: "2022 - 2023",
     title: "Frontend developer",
     company: "Ozitech ",
   },
@@ -42,9 +42,9 @@ const Experience = ({theme}) => {
         {experiences.map((experience) => {
           return (
             <div key={experience.id} className={`flex mt-3 rounded-xl p-4  spa flex-col space-y-2 ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[rgb(42,20,84)] '} `}>
-              <h2 className="text-[#7850F7] font-bold text-base">{experience.period}</h2>
-              <h1 className="sm:text-xl text-xl ">{experience.title}</h1>
-              <p className="sm:text-lg text-lg ">{experience.company}</p>
+              <h2 className="text-[#7850F7] text-base">{experience.period}</h2>
+              <h1 className="sm:text-xl text-lg ">{experience.title}</h1>
+              <p className="sm:text-lg textbase ">{experience.company}</p>
             </div>
           );
         })}
@@ -52,7 +52,7 @@ const Experience = ({theme}) => {
        
       </motion.div>
 
-      <motion.div initial={{ x: 100, opacity: 0, scale: 0.8 }}
+      <motion.div initial={{ x: -100, opacity: 0, scale: 0.8 }}
        viewport={{once: true}}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }} className="w-[100%]  mt-6">
@@ -62,9 +62,9 @@ const Experience = ({theme}) => {
         {education.map((edu) => {
           return (
             <div key={edu.id} className= {`flex mt-3 rounded-xl p-4  flex-col space-y-2  ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[#2A1454] '} `}>
-            <h2 className="text-[#7850F7] font-bold  text-base">{edu.period}</h2>
-            <h1 className="sm:text-xl text-xl ">{edu.course}</h1>
-            <p className="sm:text-lg text-lg ">{edu.institution}</p>
+            <h2 className="text-[#7850F7]   text-base">{edu.period}</h2>
+            <h1 className="sm:text-xl text-lg ">{edu.course}</h1>
+            <p className="sm:text-lg text-base ">{edu.institution}</p>
           </div>
           );
         })}
