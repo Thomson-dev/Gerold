@@ -48,21 +48,18 @@ const Navbar = ({ theme, handleToggleTheme }) => {
     // Check if the code is running on the client side
     if (typeof window !== "undefined") {
       const handleScroll = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
           setScroll(true);
           console.log("scrolling");
         } else {
           setScroll(false);
-          console.log("not scrolling");
+         
         }
       };
 
       window.addEventListener("scroll", handleScroll);
 
       // Cleanup the event listener on component unmount
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
     }
   }, []);
 
@@ -70,8 +67,8 @@ const Navbar = ({ theme, handleToggleTheme }) => {
     <div
       className={` relative lg:max-w-full md:max-w-[1000px] mx-auto flex justify-between w-full items-center  ${
         scroll
-          ? `sticky top-0 py-9 shadow-md px-4 duration-500 z-50 ease-out ${
-              theme === "dark" ? "bg-[#050709]" : "bg-white"
+          ? ` sticky top-0 bg-[#050709] py-9 shadow-md px-4 duration-500 z-50 ease-out ${
+              theme === "dark" ? "bg-[#050709] " : "bg-white"
             }`
           : "xl:px-20 px-5 py-11"
       }  `}

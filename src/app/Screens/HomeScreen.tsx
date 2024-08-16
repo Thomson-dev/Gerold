@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 type Props = {};
 
 const HomeScreen = (props: Props) => {
-  const [theme, setTheme] = useLocalStroage("theme", "dark");
+  const [theme, setTheme] = useLocalStroage("theme", "light");
 
   function handleToggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
