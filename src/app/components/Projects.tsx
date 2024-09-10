@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import img1 from "../assert/1.jpg";
+import img1 from "../assert/project2.png";
 import img2 from "../assert/2.jpg";
 import img3 from "../assert/3.jpg";
 import img4 from "../assert/4.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
 
@@ -58,14 +59,18 @@ const All = () => {
     >
       {projects.map((project) => (
         <div
+
           key={project.id}
-          className="bg-[#140C1C] mx-auto sm:p-8 p-4 rounded-xl"
+          className="bg-[#140C1C] mx-auto sm:px-8 sm:pt-8  rounded-xl"
         >
-          <Image
+        <Link target="_blank" href='https://eblog-three.vercel.app/'>
+        <Image
             src={project.image}
             className="max-w-full h-auto"
             alt={project.title}
           />
+        </Link>
+         
           {/* <h2>{project.title}</h2>
           <p>{project.description}</p> */}
         </div>

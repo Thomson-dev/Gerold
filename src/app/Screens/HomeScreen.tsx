@@ -29,7 +29,7 @@ const HomeScreen = (props: Props) => {
       <div className="lg:max-w-[1350px] md:max-w-[1000px]  w-[94%] mx-auto ">
      {/* @ts-ignore */}
         <Hero theme={theme} />
-        <About theme={theme} />
+        {/* <About theme={theme} /> */}
          <Skills theme={theme} />
         <Projects theme={theme} /> 
       </div>

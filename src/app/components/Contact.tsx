@@ -90,7 +90,7 @@ const Contact = ({ theme }) => {
       </motion.div>
 
       <motion.div
-        initial={{ x: -100, opacity: 0, scale: 0.8 }}
+        initial={{ x: 100, opacity: 0, scale: 0.8 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}

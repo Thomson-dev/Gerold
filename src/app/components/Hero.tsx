@@ -39,7 +39,7 @@ const Hero = ({ theme, handleToggleTheme }) => {
               Hi, I am Thomson
             </h1>
             <h1 className="xl:text-6xl lg:text-5xl text-grad   font-bold  text-[2rem] text-[#5D35AE]  sora">
-              Software Enginner
+              Software Engineer
             </h1>
           </div>
 
