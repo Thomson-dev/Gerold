@@ -182,7 +182,7 @@ const Projects = ({ theme }) => {
   };
 
   return (
-    <div className="mt-[10rem]">
+    <div className="mt-[10rem]"  id="Porfolio">
       <h1 className="text-center text-grad font-bold  xl:text-5xl lg:text-4xl  text-grad text-[1.8rem] ">
         My Recent Works
       </h1>

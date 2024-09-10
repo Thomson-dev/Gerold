@@ -17,6 +17,7 @@ const Contact = ({ theme }) => {
            shadow-md xl:p-9 p-2 py-7 rounded-xl w-full ${
              theme == "dark" ? "bg-[#140C1C] " : "bg-[#ffff] "
            }`}
+           id="Contact"
       >
         <h1 className=" text-left text-grad font-bold  text-[1.8rem]">
           Let’s work together!

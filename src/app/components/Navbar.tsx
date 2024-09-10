@@ -3,7 +3,10 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assert/logo-dark.png";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+//@ts-ignore
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
 import { RiMenu3Fill } from "react-icons/ri";
 import { GoSun } from "react-icons/go";
 import { FaTimes } from "react-icons/fa";
@@ -13,28 +16,28 @@ type Props = {};
 //@ts-ignore
 const Navbar = ({ theme, handleToggleTheme }) => {
   const links = [
+    // {
+    //   href: "https://example.com/page1",
+    //   label: "Home",
+    //   id: 1,
+    // },
     {
-      href: "https://example.com/page1",
-      label: "Home",
-      id: 1,
-    },
-    {
-      href: "https://example.com/page2",
+      href: "About",
       label: "About",
       id: 2,
     },
     {
-      href: "https://example.com/page3",
+      href: "Porfolio",
       label: "Porfolio",
       id: 1,
     },
     {
-      href: "https://example.com/page3",
-      label: "Services",
+      href: "Skills",
+      label: "Skills",
       id: 4,
     },
     {
-      href: "https://example.com/page3",
+      href: "Contact",
       label: "Contact",
       id: 5,
     },
@@ -89,6 +92,7 @@ const Navbar = ({ theme, handleToggleTheme }) => {
           </h3>
         </a>
       </div>
+      
 
       <div
         className={`lg:flex md:flex-row flex-col hidden  xl:space-x-16 space-x-6  text-base  justify-between  sora ${
@@ -97,7 +101,7 @@ const Navbar = ({ theme, handleToggleTheme }) => {
       >
         {links.map((link) => {
           return (
-            <Link key={link.id} href={link.href}>
+            <Link key={link.id}  className ='cursor-pointer'  offset={-150}  smooth={true} duration={500} to={link.href} >
               {link.label}
             </Link>
           );
@@ -118,9 +122,9 @@ const Navbar = ({ theme, handleToggleTheme }) => {
         {links.map((link) => {
           return (
             <Link
-              className={`text-xl font-semibold ${open ? 'block': 'hidden'} `}
-              key={link.id}
-              href={link.href}
+              className={`text-xl cursor-pointer font-semibold ${open ? 'block': 'hidden'} `}
+              key={link.id}  offset={-150}  smooth={true} duration={500} to={link.href}
+              onClick={() => setOpen(false)}
             >
               {link.label}
             </Link>

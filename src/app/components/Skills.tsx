@@ -24,6 +24,7 @@ const Skills = ({ theme }) => {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
       className="mt-16"
+      id="Skills"
     >
       <h1 className="sora text-center text-grad font-bold  xl:text-5xl lg:text-4xl  text-grad text-[2rem]  ">
         My Skills
