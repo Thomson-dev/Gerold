@@ -61,7 +61,7 @@ const All = () => {
         <div
 
           key={project.id}
-          className="bg-[#140C1C] mx-auto sm:px-8 sm:pt-8  rounded-xl"
+          className="bg-[#140C1C] mx-auto sm:px-8 sm:pt-8 px-4 pt-4 rounded-xl"
         >
         <Link target="_blank" href='https://eblog-three.vercel.app/'>
         <Image

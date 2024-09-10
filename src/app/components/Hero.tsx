@@ -9,6 +9,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 import { GrProjects } from "react-icons/gr";
+import Link from "next/link";
 //@ts-ignore
 const Hero = ({ theme, handleToggleTheme }) => {
   console.log(handleToggleTheme);
@@ -56,7 +57,8 @@ const Hero = ({ theme, handleToggleTheme }) => {
               theme == "dark" ? "text-[#DDDDDD]" : "text-black"
             }`}
           >
-         I design and code beautifully appealing, user-friendly websites, and I love what I do. Simple as that!
+            I design and code beautifully appealing, user-friendly websites, and
+            I love what I do. Simple as that!
           </p>
 
           <div className="flex sm:flex-row flex-col gap-7">
@@ -65,13 +67,23 @@ const Hero = ({ theme, handleToggleTheme }) => {
             </button>
             <div className="flex gap-5   items-center">
               <button className="border border-[#8750F7] rounded-full p-2">
-                <FaGithub className="text-xl text-[#8750F7]" />
+                <Link target="_blank" href="https://github.com/Thomson-dev">
+                  <FaGithub className="text-xl text-[#8750F7]" />
+                </Link>
               </button>
               <button className="border border-[#8750F7] rounded-full p-2">
-                <FaTwitter className="text-xl text-[#8750F7]" />
+                <Link target="_blank" href="https://x.com/ThomsonOnyedika">
+                  <FaTwitter className="text-xl text-[#8750F7]" />
+                </Link>
               </button>
+
               <button className="border border-[#8750F7] rounded-full p-2">
-                <FaLinkedinIn className="text-xl text-[#8750F7]" />
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/onyedikachi-thomson/"
+                >
+                  <FaLinkedinIn className="text-xl text-[#8750F7]" />
+                </Link>
               </button>
             </div>
           </div>

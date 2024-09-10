@@ -108,17 +108,17 @@ const Navbar = ({ theme, handleToggleTheme }) => {
       <motion.ul
         initial={{ height: 0 }}
         animate={{ height: open ? "100vh" : 0 }}
-        transition={{ duration: open ? 1 : 1 }}
+        transition={{ duration: open ? 0.5 : 1 }}
         className={`flex  flex-col lg:hidden  ${
-          scroll ? " top-[5.6rem]" : "top-[5.6rem] "
+          scroll ? " top-[5.6rem]" : "top-[7rem] "
         }   space-y-9 items-center  text-white   absolute w-full bg-[#2A1454] left-0  sora  ${
-          open ? " h-[100vh] pt-7  " : "h-[0rem] hidden   "
+          open ? " h-[100vh] pt-7  " : "h-[0rem] hidden"
         }  `}
       >
         {links.map((link) => {
           return (
             <Link
-              className="text-xl font-semibold "
+              className={`text-xl font-semibold ${open ? 'block': 'hidden'} `}
               key={link.id}
               href={link.href}
             >
