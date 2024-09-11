@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import img1 from "../assert/project2.png";
-import img2 from "../assert/2.jpg";
+import img2 from "../assert/project3.png";
 import img3 from "../assert/3.jpg";
 import img4 from "../assert/4.jpg";
 import Image from "next/image";
@@ -23,6 +23,7 @@ const projects = [
     title: "Project One",
     description: "Description for project one",
     image: img1,
+    url: 'https://eblog-three.vercel.app/',
     category: "Web App",
   },
   {
@@ -30,6 +31,7 @@ const projects = [
     title: "Project Two",
     description: "Description for project two",
     image: img2,
+    url: 'https://molla-frontend.vercel.app',
     category: "Web Design",
   },
   {
@@ -55,7 +57,7 @@ const All = () => {
       whileInView={{ x: 0, opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1.5 }}
-      className="grid sm:grid-cols-2 grid-cols-1 gap-8 mt-[3rem]  "
+      className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-[3rem]  "
     >
       {projects.map((project) => (
         <div
@@ -63,10 +65,10 @@ const All = () => {
           key={project.id}
           className="bg-[#140C1C] mx-auto sm:px-8 sm:pt-8 px-4 pt-4 rounded-xl"
         >
-        <Link target="_blank" href='https://eblog-three.vercel.app/'>
+        <Link target="_blank" href= {project.url || '' }>
         <Image
             src={project.image}
-            className="max-w-full h-auto"
+            className="max-w-full h-auto object-cover"
             alt={project.title}
           />
         </Link>
