@@ -53,7 +53,7 @@ const Hero = ({ theme, handleToggleTheme }) => {
           </div>
 
           <p
-            className={`xl:text-xl sm:text-lg text-base  font-normal   max-w-lg  ${
+            className={`xl:text-xl sm:text-lg text-base  figtree font-normal   max-w-lg  ${
               theme == "dark" ? "text-[#DDDDDD]" : "text-black"
             }`}
           >
@@ -99,18 +99,18 @@ const Hero = ({ theme, handleToggleTheme }) => {
           theme == "dark" ? "bg-[#140C1C] border-[#261846] " : "bg-[#F6F3FC] "
         } `}
       >
-        <div className="grid sm:grid-cols-4  grid-cols-2 place-items-center justify-between   ">
+        <div className="grid sm:grid-cols-4 figtree  grid-cols-2 place-items-center justify-between   ">
           <div className="space-y-7 flex flex-col items-center ">
             <LuAward className="text-4xl text-center  text-[#5f38b5] " />
             <h1
-              className={`xl:text-5xl text-xl   ${
+              className={`xl:text-5xl text-xl figtree  ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >
               14%
             </h1>
             <h5
-              className={`xl:text-xl lg:text-lg  ${
+              className={`xl:text-xl figtree lg:text-lg  ${
                 theme == "dark" ? " text-white" : "text-[#8750F7]"
               } `}
             >

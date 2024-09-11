@@ -23,7 +23,7 @@ const Contact = ({ theme }) => {
           Let’s work together!
         </h1>
         <p
-          className={` xl:text-xl sm:text-lg text-base    leading-6 max-w-lg tracking-wide   ${
+          className={` xl:text-lg sm:text-lg text-base figtree   leading-6 max-w-lg tracking-wide   ${
             theme == "dark" ? "text-white" : "text-[#653ABC]"
           }  `}
         >
@@ -91,7 +91,7 @@ const Contact = ({ theme }) => {
       </motion.div>
 
       <motion.div
-        initial={{ x: 100, opacity: 0, scale: 0.8 }}
+        initial={{ x: -100, opacity: 0, scale: 0.8 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
@@ -108,14 +108,14 @@ const Contact = ({ theme }) => {
           <div className="flex flex-col">
             <div className="">
               <h6
-                className={`text-lg ${
+                className={`text-lg figtree ${
                   theme == "dark" ? "text-white" : "text-[#653ABC]"
                 } `}
               >
                 Phone
               </h6>
               <h1
-                className={`sm:text-xl text-lg  ${
+                className={`sm:text-xl text-lg figtree  ${
                   theme == "dark" ? "text-white" : "text-[#653ABC]"
                 } `}
               >
@@ -136,14 +136,14 @@ const Contact = ({ theme }) => {
           <div className="flex flex-col">
             <div className="">
               <h6
-                className={`sm:text-xl text-lg ${
+                className={`sm:text-xl figtree text-lg ${
                   theme == "dark" ? "text-white" : "text-[#653ABC]"
                 } `}
               >
                 Email
               </h6>
               <h1
-                className={`sm:text-xl text-lg ${
+                className={`sm:text-xl figtree text-lg ${
                   theme == "dark" ? "text-white" : "text-[#653ABC]"
                 } `}
               >
@@ -172,7 +172,7 @@ const Contact = ({ theme }) => {
                 Address
               </h6>
               <p
-                className={`sm:text-xl text-lg max-w-72 ${
+                className={`sm:text-xl figtree text-lg max-w-72 ${
                   theme == "dark" ? "text-white" : "text-[#653ABC]"
                 } `}
               >

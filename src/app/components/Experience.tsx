@@ -41,7 +41,7 @@ const Experience = ({theme}) => {
         <div className="mt-3 sm:mt-8 ">
         {experiences.map((experience) => {
           return (
-            <div key={experience.id} className={`flex mt-3 rounded-xl p-4  spa flex-col space-y-2 ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[rgb(42,20,84)] '} `}>
+            <div key={experience.id} className={`flex mt-3 rounded-xl figtree p-4  spa flex-col space-y-2 ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[rgb(42,20,84)] '} `}>
               <h2 className="text-[#7850F7] text-base">{experience.period}</h2>
               <h1 className="sm:text-xl text-lg ">{experience.title}</h1>
               <p className="sm:text-lg textbase ">{experience.company}</p>
@@ -61,7 +61,7 @@ const Experience = ({theme}) => {
         <div className="mt-3 sm:mt-8 " >
         {education.map((edu) => {
           return (
-            <div key={edu.id} className= {`flex mt-3 rounded-xl p-4  flex-col space-y-2  ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[#2A1454] '} `}>
+            <div key={edu.id} className= {`flex mt-3 rounded-xl p-4  flex-col figtree space-y-2  ${theme == 'dark' ? ' bg-[#140C1C] text-white' : 'bg-[#ffff] text-[#2A1454] '} `}>
             <h2 className="text-[#7850F7]   text-base">{edu.period}</h2>
             <h1 className="sm:text-xl text-lg ">{edu.course}</h1>
             <p className="sm:text-lg text-base ">{edu.institution}</p>

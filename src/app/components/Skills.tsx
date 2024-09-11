@@ -30,7 +30,7 @@ const Skills = ({ theme }) => {
         My Skills
       </h1>
       <p
-        className={`text-[#DDDDDD] text-center mt-1 max-w-2xl  mx-auto 
+        className={`text-[#DDDDDD] figtree text-center mt-1 max-w-2xl  mx-auto 
       xl:text-xl sm:text-lg text-base  font-normal ${
         theme == "dark" ? "text-[#DDDDDD]" : "text-black"
       } `}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import img1 from "../assert/project2.png";
 import img2 from "../assert/project3.png";
-import img3 from "../assert/3.jpg";
+import img3 from "../assert/project4.png";
 import img4 from "../assert/4.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,14 +32,15 @@ const projects = [
     description: "Description for project two",
     image: img2,
     url: 'https://molla-frontend.vercel.app',
-    category: "Web Design",
+    category: "Web App",
   },
   {
     id: 3,
     title: "Project Three",
     description: "Description for project three",
     image: img3,
-    category: "Web App",
+    url: ' https://prime-base.vercel.app/',
+    category: "Web Design",
   },
   {
     id: 4,
